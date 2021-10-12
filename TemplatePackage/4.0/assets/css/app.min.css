@@ -20763,7 +20763,7 @@ table.table-striped.bg-gray-l4 tbody tr:nth-of-type(odd) {
 }
 
 .theme-blue .site-title {
-    background-color: #005eaa;
+    background-color: #0E1E45;
     color: #fff;
     border-bottom: 3px solid #88c3ea
 }
@@ -31549,7 +31549,7 @@ html.intranet .people-finder-input {
 }
 
 html.intranet .input-loading {
-    background: transparent url(/TemplatePackage/4.0/assets/imgs/loading.gif) no-repeat scroll right center content-box;
+    background: transparent url(../fonts/TemplatePackage/4.0/assets/imgs/loading.gif) no-repeat scroll right center content-box;
     background-size: auto 160%
 }
 
