@@ -10,7 +10,7 @@ var fs = require('fs')
 var express = require('express')
 var app = express()
 
-
+//replace port number
 app.use(express.static(__dirname + '/'))
 app.listen(3007, function () {
     console.log('cdc screening app listening on port 3007!')
