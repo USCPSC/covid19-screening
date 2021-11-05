@@ -1,7 +1,8 @@
 "# covid19-screening" 
 ### Running Locally
-To run make sure you have a local node server or any web server
-for node, add an index.js file at the root directory and paste the code below inside the index.js file:
+To run make sure you have a local node server or any web server.
+
+For running with a node server, add an index.js file at the root directory and paste the code below inside the index.js file:
 
 ```
 var http = require('http')
