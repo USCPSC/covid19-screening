@@ -9,11 +9,10 @@
     <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport" />
     <meta name="mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
-
-
     <link rel="shortcut icon" href="/imgs/favicon.ico">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="../TemplatePackage/4.0/assets/css/cpsc.css" />
     <link rel="stylesheet" href="../TemplatePackage/4.0/assets/css/app.min.css" />
 
     <link rel="stylesheet" media="print" href="../TemplatePackage/4.0/assets/css/print.min.css" />
@@ -79,634 +78,6 @@
     <meta name="cdc:last_published" content="2021-08-03T20:59:02Z" />
 
 </head>
-<style>
-    .footer {
-        background-color: #0E1E45;
-        color: #ffffff;
-    }
-
-    .footer .social_block {
-        text-align: center;
-    }
-
-    .footer .social_block a {
-        padding: 0 1rem;
-        text-decoration: none;
-    }
-
-    .footer-flex-column {
-        -ms-flex-direction: column !important;
-        flex-direction: column !important;
-    }
-
-    .flex-md-row {
-        -ms-flex-direction: row !important;
-        flex-direction: row !important;
-    }
-
-    .footer .footer-list {
-        padding: 1.5em;
-    }
-
-    .footer-nav {
-
-        display: -ms-flexbox;
-        display: flex;
-        -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-        padding-left: 0;
-        margin-bottom: 0;
-        list-style: none
-    }
-
-    .footer-nav-fill .footer-nav-item {
-
-            {
-            -ms-flex: 1 1 auto;
-            flex: 1 1 auto;
-            text-align: center;
-        }
-    }
-
-    @media (min-width: 768px) {
-        .footer .social_block a {
-            padding-left: 1rem;
-        }
-    }
-
-    .footer .note-block .header-font {
-        color: #ffffff;
-    }
-
-    .footer .note-block .header-font img {
-        max-height: 30px;
-        max-width: 30px;
-        padding-right: 2px;
-        display: inline-block;
-        vertical-align: top;
-    }
-
-    .footer .note-block .header-font a {
-        display: inline-block;
-        width: 80%;
-    }
-
-    .footer a {
-        color: #ffffff;
-        text-decoration: none;
-    }
-
-    .footer a:hover,
-    .footer a:focus {
-        text-decoration: underline;
-        color: #ffffff;
-    }
-
-    .footer .footer-list {
-        padding: 1.5em;
-    }
-
-    .footer .footer-list div {
-        margin-top: 20px;
-    }
-
-    .footer .footer-list div:first-child {
-        margin-top: 0;
-    }
-
-    .footer .footer-list div span {
-        font-weight: bold;
-        min-width: 200px;
-    }
-
-    .footer .footer-list .note {
-        color: #ffffff;
-        font-size: 0.813em;
-        text-align: right;
-    }
-
-    .footer .footer-list a {
-        margin: 0 1em;
-        line-height: 1.5;
-        text-decoration: none;
-    }
-
-    .footer .footer-list a:hover,
-    .footer .footer-list a:focus {
-        text-decoration: underline;
-    }
-
-    .footer .info {
-        text-align: center;
-        line-height: 2em;
-        border-top: 1px solid #FFFFFF;
-    }
-
-    .accordion {
-        background-color: #0E1E45;
-    }
-
-    .accordion>.card:last-of-type {
-        border-top-left-radius: 0;
-        border-top-right-radius: 0;
-    }
-
-    .accordion>.card:first-of-type {
-        border-bottom: 0;
-        border-bottom-right-radius: 0;
-        border-bottom-left-radius: 0;
-    }
-
-    .accordion .card {
-        border: 0;
-        border-radius: 0;
-        background-color: #0E1E45;
-    }
-
-    .accordion>.card {
-        overflow: hidden;
-    }
-
-    .card {
-        border: 1px solid #1D2757;
-        margin: 1rem 0;
-        border-left: 7px solid #1D2757;
-        margin: 1rem 0;
-        box-shadow: none;
-    }
-
-    .card {
-        font-weight: 400;
-        border: 0;
-        -webkit-box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
-        box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
-    }
-
-    .card {
-        position: relative;
-        display: -ms-flexbox;
-        display: flex;
-        -ms-flex-direction: column;
-        flex-direction: column;
-        min-width: 0;
-        word-wrap: break-word;
-        background-color: #fff;
-        background-clip: border-box;
-        border: 1px solid rgba(0, 0, 0, .125);
-        border-radius: .25rem;
-    }
-
-
-
-    .justify-content-center {
-        -ms-flex-pack: center !important;
-        justify-content: center !important;
-    }
-
-    .flex-column {
-        -ms-flex-direction: column !important;
-        flex-direction: column !important;
-    }
-
-    .nav {
-        display: -ms-flexbox;
-        display: flex;
-        -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-        padding-left: 0;
-        margin-bottom: 0;
-        list-style: none;
-    }
-
-    .flex-row {
-        -ms-flex-direction: row !important;
-        flex-direction: row !important;
-    }
-
-    .d-flex {
-        display: -ms-flexbox !important;
-        display: flex !important;
-    }
-</style>
-<style media="print">
-    .print-hidden {
-        display: none;
-    }
-
-    .screening-section {
-        display: none;
-    }
-
-    .screening-section.results {
-        display: block;
-    }
-
-    .screening-section button.print {
-        display: none;
-    }
-
-    .facility-table {
-        display: none;
-    }
-</style>
-
-<style>
-    ul.social-media-footer {
-        display: none !important;
-    }
-
-    .screening-section {
-        background: #e1f3f8;
-        padding: 1em;
-        margin: 1.5em 0;
-    }
-
-    .screening-section .screening-header1 {
-        font-size: 24px;
-    }
-
-    .screening-section .screening-header2 {
-        font-size: 20px;
-        margin-top: 5px;
-        color: #323a45;
-        font-weight: bolder;
-        font-family: "Open Sans", apple-system, blinkmacsystemfont, "Segoe UI", "Helvetica Neue", arial, sans-serif;
-    }
-
-    .screening-section .screening-button {
-        border-radius: 8px;
-        border: 2px solid #0051AB;
-        background-color: transparent;
-        color: #0051AB;
-        font-size: 20px;
-        font-weight: bold;
-        padding: 9px 28px;
-    }
-
-    .screening-section .screening-button.answered {
-        background-color: #0051AB;
-        color: white;
-    }
-
-    .screening-section .screening-button[disabled] {
-        border-color: gray;
-        color: gray;
-    }
-
-    .screening-section.results {
-        background-color: white;
-        text-align: center;
-    }
-
-    .screening-section.results .cdc-icon-pdf {
-        display: none;
-    }
-
-    .screening-section.results a,
-    .screening-section.results p,
-    .screening-section.results .approved-indicator {
-        color: white;
-    }
-
-    .approved-indicator {
-        font-weight: bolder;
-        font-size: 70px;
-        text-align: center;
-    }
-
-    .screening-section .screening-button.print {
-        color: white;
-        border-color: white;
-    }
-
-    .more-info-button {
-        margin-top: 2em;
-    }
-
-    .more-info-button:focus {
-        outline: auto !important;
-    }
-
-    .more-info {
-        display: none;
-    }
-
-    #answerConfirmation {
-        background-color: transparent;
-    }
-
-    #screening-timeout {
-        margin-bottom: 30px;
-    }
-
-    .screening-section .accordion .card.bar,
-    .screening-section .accordion .card-header {
-        background-color: transparent;
-    }
-
-    .screening-section .accordion .card-header {
-        border-bottom: none;
-    }
-
-    .screening-section .accordion .card-header::after {
-        right: auto;
-        margin-left: 15px;
-    }
-
-    .screening-section .cdc-icon-info-circle-solid {
-        margin-right: 5px;
-    }
-
-    .screening-section .cdc-icon-info-circle-solid::before {
-        color: #0051AB;
-    }
-
-    .screening-section .more-info {
-        background-color: #f5f5f5;
-        padding: 5px;
-        margin-top: 1rem;
-    }
-
-    .facility-table-container {
-        width: 100%;
-        overflow-x: auto;
-    }
-
-    .facility-table {
-        text-align: left;
-        margin: 1em auto;
-    }
-
-    .facility-table td,
-    .facility-table th {
-        padding: 0 0.75em 0 0.25em;
-    }
-
-    .facility-table .row-header {
-        background-color: white;
-    }
-
-    .facility-table .row-header a {
-        color: #075290;
-    }
-
-    .facility-table .row-moderate {
-        background-color: yellow;
-    }
-
-    .facility-table .row-substantial {
-        background-color: orange;
-    }
-
-    .facility-table .row-high {
-        background-color: red;
-    }
-
-    .modal-header {
-        flex-direction: column;
-    }
-
-    .modal-header .modal-title {
-        margin-bottom: 1em;
-    }
-</style>
-<style>
-    ul.social-media-footer {
-        display: none !important;
-    }
-
-    .screening-section {
-        background: #e1f3f8;
-        padding: 1em;
-        margin: 1.5em 0;
-    }
-
-    .screening-section .screening-header1 {
-        font-size: 24px;
-    }
-
-    .screening-section .screening-header2 {
-        font-size: 20px;
-        margin-top: 5px;
-        color: #323a45;
-        font-weight: bolder;
-        font-family: "Open Sans", apple-system, blinkmacsystemfont, "Segoe UI", "Helvetica Neue", arial, sans-serif;
-    }
-
-    .screening-section .screening-button {
-        border-radius: 8px;
-        border: 2px solid #0051AB;
-        background-color: transparent;
-        color: #0051AB;
-        font-size: 20px;
-        font-weight: bold;
-        padding: 9px 28px;
-    }
-
-    .screening-section .screening-button.answered {
-        background-color: #0051AB;
-        color: white;
-    }
-
-    .screening-section .screening-button[disabled] {
-        border-color: gray;
-        color: gray;
-    }
-
-    .screening-section.results {
-        background-color: white;
-        text-align: center;
-    }
-
-    .screening-section.results .cdc-icon-pdf {
-        display: none;
-    }
-
-    .cdc-icon-pdf:before {
-        content: ""
-    }
-
-    .screening-section.results a,
-    .screening-section.results p,
-    .screening-section.results .approved-indicator {
-        color: white;
-    }
-
-    .approved-indicator {
-        font-weight: bolder;
-        font-size: 70px;
-        text-align: center;
-    }
-
-    .screening-section .screening-button.print {
-        color: white;
-        border-color: white;
-    }
-
-    .more-info-button {
-        margin-top: 2em;
-    }
-
-    .more-info-button:focus {
-        outline: auto !important;
-    }
-
-    .more-info {
-        display: none;
-    }
-
-    #answerConfirmation {
-        background-color: transparent;
-    }
-
-    #screening-timeout {
-        margin-bottom: 30px;
-    }
-
-    .screening-section .accordion .card.bar,
-    .screening-section .accordion .card-header {
-        background-color: transparent;
-    }
-
-    .screening-section .accordion .card-header {
-        border-bottom: none;
-    }
-
-    .screening-section .accordion .card-header::after {
-        right: auto;
-        margin-left: 15px;
-    }
-
-    .screening-section .cdc-icon-info-circle-solid {
-        margin-right: 5px;
-    }
-
-    .screening-section .cdc-icon-info-circle-solid::before {
-        color: #0051AB;
-    }
-
-    .screening-section .more-info {
-        background-color: #f5f5f5;
-        padding: 5px;
-        margin-top: 1rem;
-    }
-
-    .facility-table-container {
-        width: 100%;
-        overflow-x: auto;
-    }
-
-    .facility-table {
-        text-align: left;
-        margin: 1em auto;
-    }
-
-    .facility-table td,
-    .facility-table th {
-        padding: 0 0.75em 0 0.25em;
-    }
-
-    .facility-table .row-header {
-        background-color: white;
-    }
-
-    .facility-table .row-header a {
-        color: #075290;
-    }
-
-    .facility-table .row-moderate {
-        background-color: yellow;
-    }
-
-    .facility-table .row-substantial {
-        background-color: orange;
-    }
-
-    .facility-table .row-high {
-        background-color: red;
-    }
-</style>
-<style>
-    .card-bg-primary {
-        background-color: #003F7B;
-        color: #fff !important
-    }
-
-    .card-bg-gray-l1 {
-        background-color: #e0e0e0 !important;
-        color: #000
-    }
-
-    @media screen and (max-width: 768px) {
-        .header--logo {
-            margin: 2em 0 0;
-        }
-    }
-
-    .header--logo {
-        margin: 2em 0;
-        position: relative;
-        flex: 2;
-        -webkit-flex: 2;
-        -moz-flex: 2;
-        -ms-flex: 2;
-    }
-
-    @media screen and (max-width: 480px) {
-        .header--logo-text {
-            top: .6em;
-        }
-    }
-
-    .header--logo-text {
-        position: absolute;
-        top: .5em;
-        color: #20407d;
-        display: inline-block;
-    }
-
-    @media screen and (max-width: 768px) {
-        .header-row {
-            display: flex;
-            display: -webkit-box;
-            display: -moz-box;
-            display: -ms-flexbox;
-            display: -webkit-flex;
-            flex-direction: column;
-            -webkit-flex-direction: column;
-            -moz-flex-direction: column;
-            -ms-flex-direction: column;
-            flex-wrap: nowrap;
-            -webkit-flex-wrap: wrap;
-            -moz-wrap: wrap;
-            -ms-wrap: wrap;
-            padding: inherit;
-            width: auto;
-        }
-    }
-
-    .header-row {
-        display: flex;
-        display: -webkit-box;
-        display: -moz-box;
-        display: -ms-flexbox;
-        display: -webkit-flex;
-        flex-direction: row;
-        -webkit-flex-direction: row;
-        -moz-flex-direction: row;
-        -ms-flex-direction: row;
-        flex-wrap: wrap;
-        -webkit-flex-wrap: wrap;
-        -moz-wrap: wrap;
-        -ms-wrap: wrap;
-        width: 100%;
-    }
-
-    .row {
-        margin-left: -15px;
-        margin-right: -15px;
-    }
-</style>
 
 <body class="no-js">
 
@@ -838,8 +209,7 @@
                                                                 class="file-details">[PDF
                                                                 &ndash; 198
                                                                 KB]</span></a>&nbsp;and show the completed form to
-                                                        security at the facility entrance. <strong>Will be updated to
-                                                            reflect the latest CDC guidance, when available.</strong>
+                                                        security at the facility entrance.
                                                     </p>
                                                 </div>
                                             </div>
@@ -854,7 +224,7 @@
                                     <div class="wpb_wrapper">
                                         <a href="privacy-notice.html" target="_blank" title="Privacy Notice">CPSC Notice
                                             on Self-Screening</a>
-                                        <div class="screening-section track-one" style="display: none;">
+                                        <div class="screening-section">
                                             <p class="screening-header2">Regardless of your vaccination status, have you
                                                 experienced any of the symptoms in the list below in the past 48
                                                 hours?<br><br>IMPORTANT: ANSWER “YES” EVEN IF YOU BELIEVE THE SYMPTOM(S)
@@ -879,193 +249,417 @@
                                                 physically return to the workplace until symptoms have been
                                                 improving
                                                 for more than 48 hours.</p>
-                                            <button class="screening-button">Yes</button> <button
-                                                class="screening-button">No</button>
-
-
+                                            <p>Please select an answer</p><button class="screening-button"
+                                                data-next="result">Yes</button> <button class="screening-button"
+                                                data-next="slide" data-selector=".q2">No</button>
                                         </div>
 
-                                        <!--Start Question 2-->
-                                        <div class="screening-section track-one" style="display: none;">
+                                        <!-- Start Question 2 / B -->
+                                        <div class="screening-section q2" style="display: none;">
                                             <p class="screening-header2">Are you isolating or quarantining because you
                                                 tested positive for COVID-19 or are
                                                 worried that you may be sick with COVID-19?</p> <button
-                                                class="screening-button">Yes</button> <button
-                                                class="screening-button">No</button>
+                                                class="screening-button" data-next="result">Yes</button> <button
+                                                class="screening-button" data-next="slide"
+                                                data-selector=".q3">No</button>
                                             <div><button class="btn btn-secondary more-info-button">More Info</button>
                                             </div>
-                                            <p class="more-info" role="alert"><span>
-                                                    <i class="fa fa-info-circle"></i></span>If you have
+                                            <p class="more-info" role="alert" style="display: block;">
+                                                If you have
                                                 concerns about being exposed to or sick with COVID-19, please
                                                 stay home and self-quarantine or isolate. <a
                                                     href="https://www.cdc.gov/coronavirus/2019-ncov/if-you-are-sick/quarantine.html">Read
                                                     more about when
                                                     you should be in isolation or quarantine.</a>
                                             </p>
-
                                         </div>
-                                        <!--End Question 2-->
-                                        <!--Start Question 3-->
-                                        <div class="screening-section track-one" style="display: none;">
-                                            <p class="screening-header2">Are you fully
-                                                vaccinated?*<br><br>AND/OR<br><br>Have you recovered from a
-                                                documented COVID-19 infection in the last 3 months?</p>
-                                            <p>*To be considered fully vaccinated, you must be &ge;2 weeks following
-                                                receipt of the second dose in a 2-dose
+                                        <!-- End Question 2 -->
+                                        <!-- Start Question 3 / C -->
+                                        <div class="screening-section q3" style="display: none;">
+                                            <p class="screening-header2">Are You FULLY vaccinated* with the primary
+                                                series for COVID-19?<br><br>
+                                                OR<br><br>
+                                                Have you recovered from a documented COVID-19 infection in the last 3
+                                                months?</p>
+                                            <button class="screening-button" data-next="slide"
+                                                data-metric="vaccination question" data-selector=".q4-0">Yes</button>
+                                            <button class="screening-button" data-next="slide" data-selector=".q4-1"
+                                                data-metric="vaccination question">No</button>
+                                            <button class="screening-button" data-next="slide" data-selector=".q4-1"
+                                                data-metric="vaccination question">Prefer Not to Answer</button>
+                                            <p class="asterisk">*To be considered fully vaccinated, you must be &ge;2
+                                                weeks following receipt of the second dose in a 2-dose
                                                 series or &ge;2 weeks following receipt of one dose of a single-dose
-                                                vaccine.Please see <a
+                                                vaccine. Please see <a
                                                     href="https://www.cdc.gov/coronavirus/2019-ncov/vaccines/fully-vaccinated.html">When
-                                                    You’ve Been Fully Vaccinated | CDC</a>
-                                                for more
-                                                information.
-                                            </p> <button class="screening-button">Yes</button> <button
-                                                class="screening-button">No</button> <button
-                                                class="screening-button">Prefer Not to Answer</button>
+                                                    You&rsquo;ve Been Fully Vaccinated | CDC</a> for more information.
+                                            </p>
                                         </div>
-                                        <!--End Question 3-->
-                                        <!--Start Question 4-->
-                                        <div class="screening-section track-one" style="display: none;">
-                                            <p class="screening-header2">Have you been in close physical contact* in the
-                                                last 14 days with:</p>
-                                            <ul>
-                                                <li>anyone who is known to have laboratory-confirmed COVID-19?</li>
-                                            </ul>
-                                            <ul style="list-style-type: none;">
-                                                <li><strong>OR</strong></li>
-                                            </ul>
-                                            <ul>
-                                                <li>anyone who has any symptoms consistent with COVID-19?</li>
-                                            </ul>
-                                            <p>*Close physical contact is defined as being within 6 feet of an
-                                                infected/symptomatic person for a cumulative
-                                                total of 15 minutes or more over a 24-hour period starting from 48 hours
-                                                before illness onset (or, for
-                                                asymptomatic individuals, 48 hours prior to test specimen collection.
-                                            </p> <button class="screening-button">Yes</button> <button
-                                                class="screening-button">No</button>
+                                        <!-- End Question 3 -->
+                                        <!-- Start Question 4 - 0 / D -->
+                                        <div class="screening-section q4-0" style="display: none;">
+                                            <p class="screening-header2">Are you up-to-date* with your COVID-19
+                                                vaccinations?</p>
+                                            <button class="screening-button" data-next="slide"
+                                                data-selector=".q5-0">Yes</button> <button class="screening-button"
+                                                data-next="slide" data-selector=".q5-1">No</button>
+                                            <p class="asterisk">*<a
+                                                    href="https://www.cdc.gov/coronavirus/2019-ncov/vaccines/stay-up-to-date.html?CDC_AA_refVal=https%3A%2F%2Fwww.cdc.gov%2Fcoronavirus%2F2019-ncov%2Fvaccines%2Ffully-vaccinated.html">Up-to-date</a>
+                                                means a person has received all recommended COVID-19 vaccines, including
+                                                any booster dose(s) when eligible. If it has been longer than 5 months
+                                                since you completed your primary series of Pfizer-BioNTech or Moderna OR
+                                                it has been longer than 2 months since you completed your primary series
+                                                of J&amp;J's Janssen, and you have not yet received a booster, then
+                                                answer "No."</p>
+                                        </div>
+                                        <!-- End Question 4 - 0 -->
+                                        <!-- Start Question 4 - 1 / E -->
+                                        <div class="screening-section q4-1" style="display: none;">
+                                            <p class="screening-header2">Do you attest that you have emailed a negative
+                                                COVID-19 PCR or
+                                                professionally proctored antigen test results that was taken this week
+                                                to HRManagement@cpsc.gov?</p>
+                                            <p><strong>SELECT "YES" if you are a visitor to the CPSC. You will be asked
+                                                    to
+                                                    show a negative COVID-PCR test to security when you
+                                                    check-in</strong>.</p>
+                                            <button class="screening-button" data-next="slide"
+                                                data-selector=".q5-2">Yes</button> <button class="screening-button"
+                                                data-next="result">No</button>
                                             <div><button class="btn btn-secondary more-info-button">More Info</button>
                                             </div>
-                                            <p class="more-info" role="alert"><span>
-                                                    <i class="fa fa-info-circle"></i></span><strong> If you have
-                                                    been in close contact with someone with COVID-19 and you are not
-                                                    fully vaccinated</strong>, you should stay home and self-quarantine
-                                                for 14 days before returning to work. <a
-                                                    href="https://www.cdc.gov/coronavirus/2019-ncov/if-you-are-sick/quarantine.html">Read
-                                                    more about when you should be in isolation or quarantine.</a>
-                                                <strong>If you have been in close contact with someone with COVID-19 and
-                                                    you are fully vaccinated</strong>, you should stay home and get
-                                                tested 5-7 days after your exposure, even if you don&rsquo;t have
-                                                symptoms.</p>
+                                            <div class="more-info" role="alert">
+                                                <p><span>
+                                                        <i class="fa fa-info-circle"></i></span> CPSC staff who are not
+                                                    yet
+                                                    up-to-date must provide the results of a negative PCR or
+                                                    professionally proctored antigen test (electronic or hard copy)
+                                                    within the week that they are coming on-site to a CPSC facility or
+                                                    interacting with the public on behalf of CPSC.</p>
+
+                                                <p>Visitors to CPSC campuses who are not yet
+                                                    up-to-date must provide the
+                                                    results of a negative PCR or antigen test*
+                                                    (electronic or hard copy) prior to coming to a CPSC facility. The
+                                                    test
+                                                    must be taken within three days of coming to
+                                                    a CPSC facility.</p>
+
+
+                                                <p>*Antigen test must be professionally
+                                                    proctored (meaning, a medical
+                                                    professional must watch you take the test and
+                                                    provide you with an electronic or hard copy result).</p>
+                                            </div>
                                         </div>
-                                        <!--End Question 4-->
-                                        <!--Start Question 5-->
-                                        <div class="screening-section track-one" style="display: none;">
-                                            <p class="screening-header2">Are you currently waiting on the results of a
-                                                COVID-19 test?</p>
-                                            <p class="screening-header2">IMPORTANT: ANSWER &ldquo;NO&rdquo; IF YOU ARE
-                                                WAITING ON THE RESULTS OF A PRE-TRAVEL OR
-                                                POST-TRAVEL COVID-19 TEST</p> <button
-                                                class="screening-button">Yes</button> <button
-                                                class="screening-button">No</button>
-                                            <!--  <div><button class="btn btn-secondary more-info-button">More Info</button>
+                                        <!-- End Question 4 - 1 -->
+                                        <!-- Start Question 5 - 0 / F1 -->
+                                        <div class="screening-section q5-0" style="display: none;">
+                                            <p class="screening-header2">Have you been in close physical contact* in the
+                                                last
+                                                10 days with anyone who has tested positive for COVID-19?</p>
+                                            <button class="screening-button" data-next="slide"
+                                                data-selector=".q6-0">Yes</button> <button class="screening-button"
+                                                data-next="slide" data-selector=".q6-1">No</button>
+                                            <p class="asterisk">*Close physical contact is defined as being within 6
+                                                feet of
+                                                an infected/symptomatic person for a cumulative total of 15 minutes or
+                                                more
+                                                over a 24-hour period starting from 48 hours before illness onset (or,
+                                                for
+                                                asymptomatic individuals, 48 hours prior to test specimen collection).
+                                            </p>
+                                            <div><button class="btn btn-secondary more-info-button">More Info</button>
                                             </div>
                                             <p class="more-info" role="alert"><span
-                                                    class="x24 cdc-icon-info-circle-solid"></span>If you have an urgent
-                                                need to access a
-                                                CPSC facility while waiting for a test result, please contact your CIO
-                                                management officer and ask them to
-                                                request a waiver through CPSC's Occupational Health Clinic (OHC).
-                                                Waivers
-                                                will only be granted in exigent
-                                                circumstances and only if it is safe to do so. OHC will not respond to
-                                                waiver requests made by individuals.
-                                            </p>-->
+                                                    class="x24 cdc-icon-info-circle-solid"></span><strong>If you have
+                                                    been in
+                                                    close contact with someone with COVID-19 and you are up-to-date with
+                                                    your
+                                                    COVID-19 vaccines</strong>, you should get tested 5 days after your
+                                                exposure and you should wear a mask indoors for 10 days, even if you
+                                                don&rsquo;t have symptoms. <a
+                                                    href="https://www.cdc.gov/coronavirus/2019-ncov/your-health/quarantine-isolation.html">Read
+                                                    more about when you should be in
+                                                    isolation or quarantine.</a>
+                                            </p>
                                         </div>
-                                        <!--End Question 5-->
-                                        <!--Start Question 6-->
-                                        <div class="screening-section track-one" style="display: none;">
-                                            <p class="screening-header2">Have you traveled* in the past 10 days?</p>
-                                            <p>*Travel is defined as any trip that is overnight AND on public
-                                                transportation (plane, train, bus, Uber, Lyft,
-                                                cab, etc.) OR any trip that is overnight AND with people who are not in
-                                                your household. </p> <button class="screening-button">Yes</button>
+                                        <!-- End Question 5 - 0 -->
+                                        <!-- Start Question 5 - 1 / F2 -->
+                                        <div class="screening-section q5-1" style="display: none;">
+                                            <p class="screening-header2">Have you been in close physical contact* in the
+                                                last
+                                                10 days with anyone who has tested positive for COVID-19?</p>
+
+                                            <button class="screening-button" data-next="slide"
+                                                data-selector=".q6-3">Yes</button> <button class="screening-button"
+                                                data-next="slide" data-selector=".q6-2">No</button>
+                                            <p class="asterisk">*Close physical contact is defined as being within 6
+                                                feet of
+                                                an infected/symptomatic person for a cumulative total of 15 minutes or
+                                                more
+                                                over a 24-hour period starting from 48 hours before illness onset (or,
+                                                for
+                                                asymptomatic individuals, 48 hours prior to test specimen collection).
+                                            </p>
+                                            <div><button class="btn btn-secondary more-info-button">More Info</button>
+                                            </div>
+                                            <p class="more-info" role="alert"><span
+                                                    class="x24 cdc-icon-info-circle-solid"></span><strong>If you have
+                                                    been in
+                                                    close contact with someone with COVID-19 and you are up-to-date with
+                                                    your
+                                                    COVID-19 vaccines</strong>, you should get tested 5 days after your
+                                                exposure and you should wear a mask indoors for 10 days, even if you
+                                                don&rsquo;t have symptoms. <a
+                                                    href="https://www.cdc.gov/coronavirus/2019-ncov/your-health/quarantine-isolation.html">Read
+                                                    more about when you should be in
+                                                    isolation or quarantine.</a>
+                                            </p>
+                                        </div>
+                                        <!-- End Question 5 - 1 -->
+                                        <!-- Start Question 5 - 2 / F3 -->
+                                        <div class="screening-section q5-2" style="display: none;">
+                                            <p class="screening-header2">Have you been in close physical contact* in the
+                                                last
+                                                10 days with anyone who has tested positive for COVID-19?</p>
+                                            <button class="screening-button" data-next="slide"
+                                                data-selector=".q6-4">Yes</button> <button class="screening-button"
+                                                data-next="slide" data-selector=".q6-5">No</button>
+                                            <p class="asterisk">*Close physical contact is defined as being within 6
+                                                feet of
+                                                an infected/symptomatic person for a cumulative total of 15 minutes or
+                                                more
+                                                over a 24-hour period starting from 48 hours before illness onset (or,
+                                                for
+                                                asymptomatic individuals, 48 hours prior to test specimen collection).
+                                            </p>
+                                            <div><button class="btn btn-secondary more-info-button">More Info</button>
+                                            </div>
+                                            <p class="more-info" role="alert"><span
+                                                    class="x24 cdc-icon-info-circle-solid"></span><strong>If you have
+                                                    been in
+                                                    close contact with someone with COVID-19 and you are NOT up-to-date
+                                                    with
+                                                    your COVID-19 vaccines</strong>, you should stay home and quarantine
+                                                for
+                                                at least 5 full days, get tested at least 5 days after your exposure,
+                                                and you
+                                                should wear a mask indoors for 10 days, even if you don&rsquo;t have
+                                                symptoms.
+                                                <a
+                                                    href="https://www.cdc.gov/coronavirus/2019-ncov/your-health/quarantine-isolation.html?CDC_AA_refVal=https%3A%2F%2Fwww.cdc.gov%2Fcoronavirus%2F2019-ncov%2Fif-you-are-sick%2Fquarantine.html">
+                                                    Read
+                                                    more about when you should be in
+                                                    isolation or quarantine.</p>
+                                        </div>
+                                        <!-- End Question 5 - 2 -->
+
+                                        <!-- Start Question 6 - 0 / J1 -->
+                                        <div class="screening-section q6-0" style="display: none;">
+                                            <p class="screening-header2">Did you have a negative COVID-19 test taken at
+                                                least 5 days after your last exposure to the close contact? (If it
+                                                hasn't yet been 5 days since your last exposure, select "YES")</p>
+                                            <button class="screening-button" data-next="slide"
+                                                data-selector=".q7-0">Yes</button> <button class="screening-button"
+                                                data-next="result">No</button>
+                                            <p class="more-info" role="alert"><span
+                                                    class="x24 cdc-icon-info-circle-solid"></span>Individuals who are
+                                                <a
+                                                    href="https://www.cdc.gov/coronavirus/2019-ncov/your-health/quarantine-isolation.html?CDC_AA_refVal=https%3A%2F%2Fwww.cdc.gov%2Fcoronavirus%2F2019-ncov%2Fif-you-are-sick%2Fquarantine.html">not
+                                                    up-to-date with their COVID-19 vaccines and had a close contact</a>
+                                                must stay home and quarantine for at least 5 full days and get tested
+                                                at least 5 days after your last exposure with someone with COVID-19.
+                                            </p>
+                                        </div>
+                                        <!-- End Question 6 - 0 -->
+                                        <!-- Start Question 6 - 1 / H2 -->
+                                        <div class="screening-section q6-1" style="display: none;">
+                                            <p class="screening-header2">Have you traveled <span
+                                                    style="border-bottom: 1px solid; padding-bottom: 2px;">internationally</span>
+                                                in the last 10 days?</p>
+                                            <button class="screening-button" data-conditions-travel="true"
+                                                data-toggle="modal" data-target="#answerConfirmation">Yes</button>
                                             <button class="screening-button" data-toggle="modal"
                                                 data-target="#answerConfirmation">No</button>
-                                            <!-- <div><button class="btn btn-secondary more-info-button">More Info</button>
+                                            <div><button class="btn btn-secondary more-info-button">More Info</button>
                                             </div>
-                                             <p class="more-info" role="alert"><span
-                                                    class="x24 cdc-icon-info-circle-solid"></span>If you have an urgent
-                                                need to access a
-                                                CPSC facility during your 10-day, <a
-                                                    href="/coronavirus/2019-ncov/travelers/after-travel-precautions.html">post-travel
-                                                    self-quarantine</a>,
-                                                please contact your CIO management officer and ask them to request a
-                                                waiver through CPSC's Occupational
-                                                Health Clinic (OHC). Waivers will only be granted in exigent
-                                                circumstances and only if it is safe to do so.
-                                                OHC will not respond to waiver requests made by individuals. It is
-                                                possible to reduce your <a
-                                                    href="/coronavirus/2019-ncov/travelers/after-travel-precautions.html">post-travel
-                                                    self-quarantine</a> to
-                                                7 days if you have a negative <a
-                                                    href="/coronavirus/2019-ncov/testing/diagnostic-testing.html">viral
-                                                    test</a> 3-5 days after travel. OHC can help arrange <a
-                                                    href="/coronavirus/2019-ncov/travelers/testing-air-travel.html">testing</a>,
-                                                if needed. A waiver is
-                                                needed from OHC to reduce your quarantine period.</p>-->
+                                            <p class="more-info" role="alert"><span
+                                                    class="x24 cdc-icon-info-circle-solid"></span>Individuals who are
+                                                <a
+                                                    href="https://www.cdc.gov/coronavirus/2019-ncov/travelers/international-travel-during-covid19.html#anchor_1634925927097">up-to-date
+                                                    with their COVID-19 vaccines should get tested 3-5 days after
+                                                    international travel</a>, and should self-monitor for symptoms, but
+                                                do not need to self-quarantine.</p>
                                         </div>
-                                        <!--End Question 6-->
-                                        <!-- Start question track two -->
-                                        <div class="screening-section track-two" style="display: none;">
-                                            <p class="screening-header2">Have you been in close physical contact* in the
-                                                last 14 days with:</p>
-                                            <ul>
-                                                <li>anyone who is known to have laboratory-confirmed COVID-19?</li>
-                                            </ul>
-                                            <ul style="list-style-type: none;">
-                                                <li><strong>OR</strong></li>
-                                            </ul>
-                                            <ul>
-                                                <li>anyone who has any symptoms consistent with COVID-19?</li>
-                                            </ul>
-                                            <p>*Close physical contact is defined as being within 6 feet of an
-                                                infected/symptomatic person for a cumulative
-                                                total of 15 minutes or more over a 24-hour period starting from 48 hours
-                                                before illness onset (or, for
-                                                asymptomatic individuals, 48 hours prior to test specimen collection).
-                                            </p> <button class="screening-button">Yes</button> <button
-                                                class="screening-button" data-toggle="modal"
-                                                data-target="#answerConfirmation">No</button>
-                                            <!--  <div><button class="btn btn-secondary more-info-button">More Info</button>
+                                        <!-- End Question 6 - 1 -->
+                                        <!-- Start Question 6 - 2 / G1 -->
+                                        <div class="screening-section q6-2" style="display: none;">
+                                            <p class="screening-header2">Have you traveled* in the past 10 days?</p>
+                                            <button class="screening-button" data-next="slide"
+                                                data-selector=".q6-5">Yes</button> <button class="screening-button"
+                                                data-toggle="modal" data-target="#answerConfirmation">No</button>
+                                            <p class="asterisk">*Travel is defined as any trip that is overnight AND on
+                                                public transportation (plane, train, bus, Uber, Lyft,
+                                                cab, etc.) OR any trip that is overnight AND with people who are not in
+                                                your household.</p>
+                                            <div><button class="btn btn-secondary more-info-button">More Info</button>
                                             </div>
-                                           <p class="more-info" role="alert"><span
-                                                    class="x24 cdc-icon-info-circle-solid"></span><strong>If you have
-                                                    been in close contact with someone with COVID-19 and you are not
-                                                    fully vaccinated</strong>, you should stay home and self-quarantine
-                                                for 14 days before returning to work. <a
-                                                    href="https://www.cdc.gov/coronavirus/2019-ncov/if-you-are-sick/quarantine.html">Read
-                                                    more about when you should be in isolation or quarantine.</a>
-                                                <strong>If you have been in close contact with someone with COVID-19 and
-                                                    you are fully vaccinated</strong>, you should stay home and get
-                                                tested 3-5 days after your exposure, even if you don&rsquo;t have
-                                                symptoms. <a
-                                                    href="https://www.cdc.gov/coronavirus/2019-ncov/vaccines/fully-vaccinated.html">Read
-                                                    more about what to do if you&rsquo;ve had a close contact and are
-                                                    fully vaccinated.</a> If you have an urgent need to end your
-                                                quarantine early to access a CPSC facility, please contact your CIO
-                                                management officer and ask them to email a request to OHC.</p>-->
+                                            <p class="more-info" role="alert"><span
+                                                    class="x24 cdc-icon-info-circle-solid"></span>Individuals who are
+                                                <a
+                                                    href="https://www.cdc.gov/coronavirus/2019-ncov/travelers/international-travel-during-covid19.html#anchor_1634925927097">not
+                                                    up-to-date with their COVID-19 vaccines should</a> stay home and
+                                                quarantine for at least 5 full days after travel, get tested 3-5 days
+                                                after travel, and self-monitor for symptoms. </p>
                                         </div>
-                                        <div class="screening-section track-two" style="display: none;">
-                                            <p class="screening-header2">Were you tested 5-7 days after your exposure
-                                                with the close contact?</p> <button class="screening-button"
+                                        <!-- End Question 6 - 2 -->
+                                        <!-- Start Question 6 - 3 / J2 -->
+                                        <div class="screening-section q6-3" style="display: none;">
+                                            <p class="screening-header2">Did you have a negative COVID-19 test taken at
+                                                least 5 days after your last exposure to the close contact? (If your
+                                                exposure was less than 5 days ago, answer NO)</p>
+                                            <button class="screening-button" data-conditions="true" data-next="slide"
+                                                data-selector=".q7-2">Yes</button> <button class="screening-button"
+                                                data-next="result">No</button>
+                                            <p class="more-info" role="alert"><span
+                                                    class="x24 cdc-icon-info-circle-solid"></span>Individuals who are
+                                                <a
+                                                    href="https://www.cdc.gov/coronavirus/2019-ncov/your-health/quarantine-isolation.html?CDC_AA_refVal=https%3A%2F%2Fwww.cdc.gov%2Fcoronavirus%2F2019-ncov%2Fif-you-are-sick%2Fquarantine.html">not
+                                                    up-to-date with their COVID-19 vaccines and had a close contact</a>
+                                                must stay home and quarantine for at least 5 full days and get tested
+                                                at least 5 days after your last exposure with someone with COVID-19.
+                                            </p>
+                                        </div>
+                                        <!-- End Question 6 - 3 -->
+
+                                        <!-- Start Question 6 - 4 / J3 -->
+                                        <div class="screening-section q6-4" style="display: none;">
+                                            <p class="screening-header2">Did you have a negative COVID-19 test taken at
+                                                least 5 days after your last exposure to the close contact? (If your
+                                                exposure was less than 5 days ago, answer NO)</p>
+                                            <button class="screening-button" data-conditions="true" data-next="slide"
+                                                data-selector=".q7-3">Yes</button> <button class="screening-button"
+                                                data-next="result">No</button>
+                                            <p class="more-info" role="alert"><span
+                                                    class="x24 cdc-icon-info-circle-solid"></span>Individuals who are
+                                                <a
+                                                    href="https://www.cdc.gov/coronavirus/2019-ncov/your-health/quarantine-isolation.html?CDC_AA_refVal=https%3A%2F%2Fwww.cdc.gov%2Fcoronavirus%2F2019-ncov%2Fif-you-are-sick%2Fquarantine.html">not
+                                                    up-to-date with their COVID-19 vaccines and had a close contact</a>
+                                                must stay home and quarantine for at least 5 full days and get tested
+                                                at least 5 days after your last exposure with someone with COVID-19.
+                                            </p>
+                                        </div>
+                                        <!-- End Question 6 - 4 -->
+
+                                        <!-- Start Question 6 - 5 / K1 -->
+                                        <div class="screening-section q6-5" style="display: none;">
+                                            <p class="screening-header2">Have you traveled* in the past 5 days?</p>
+                                            <button class="screening-button" data-next="result">Yes</button> <button
+                                                class="screening-button" data-conditions-travel="true"
+                                                data-toggle="modal" data-target="#answerConfirmation" data-next="result"
+                                                data-approved="true">No</button>
+                                            <p class="asterisk">*Travel is defined as any trip that is overnight AND on
+                                                public transportation (plane, train, bus, Uber, Lyft,
+                                                cab, etc.) OR any trip that is overnight AND with people who are not in
+                                                your household. </p>
+                                            <div><button class="btn btn-secondary more-info-button">More Info</button>
+                                            </div>
+                                            <p class="more-info" role="alert"><span
+                                                    class="x24 cdc-icon-info-circle-solid"></span>Individuals who are
+                                                <a
+                                                    href="https://www.cdc.gov/coronavirus/2019-ncov/travelers/international-travel-during-covid19.html#anchor_1634925927097">not
+                                                    up-to-date with their COVID-19 vaccines should</a> stay home and
+                                                quarantine for at least 5 full days after travel, get tested 3-5 days
+                                                after travel, and self-monitor for symptoms. </p>
+                                        </div>
+                                        <!-- End Question 6 - 5 -->
+
+                                        <!-- Start Question 7 - 0 / H1 -->
+                                        <div class="screening-section q7-0" style="display: none;">
+                                            <p class="screening-header2">Have you traveled <span
+                                                    style="border-bottom: 1px solid; padding-bottom: 2px;">internationally</span>
+                                                in the last 10 days?</p>
+                                            <button class="screening-button" data-conditions-both="true"
                                                 data-toggle="modal" data-target="#answerConfirmation">Yes</button>
-                                            <button class="screening-button">No</button>
+                                            <button class="screening-button" data-conditions-travel="true"
+                                                data-toggle="modal" data-target="#answerConfirmation">No</button>
+                                            <div><button class="btn btn-secondary more-info-button">More Info</button>
+                                            </div>
+                                            <p class="more-info" role="alert"><span
+                                                    class="x24 cdc-icon-info-circle-solid"></span>Individuals who are <a
+                                                    href="https://www.cdc.gov/coronavirus/2019-ncov/travelers/international-travel-during-covid19.html#anchor_1634925927097">up-to-date
+                                                    with their COVID-19 vaccines should get tested 3-5 days after
+                                                    international travel</a>, and should self-monitor for symptoms, but
+                                                do
+                                                not need to self-quarantine.</p>
                                         </div>
-                                        <!-- End question track two -->
+                                        <!-- End Question 7 - 0 -->
+                                        <!-- Start Question 7 - 1 / K1 -->
+                                        <div class="screening-section q7-1" style="display: none;">
+                                            <p class="screening-header2">Have you traveled* in the past 5 days?</p>
+                                            <button class="screening-button" data-next="result">Yes</button> <button
+                                                class="screening-button" data-toggle="modal"
+                                                data-conditions-travel="true"
+                                                data-target="#answerConfirmation">No</button>
+                                            <p class="asterisk">*Travel is defined as any trip that is overnight AND on
+                                                public transportation (plane, train, bus, Uber, Lyft,
+                                                cab, etc.) OR any trip that is overnight AND with people who are not in
+                                                your
+                                                household.</p>
+                                            <div><button class="btn btn-secondary more-info-button">More Info</button>
+                                            </div>
+
+                                        </div>
+                                        <!-- End Question 7 - 1 -->
+                                        <!-- Start Question 7 - 2 / G2 -->
+                                        <div class="screening-section q7-2" style="display: none;">
+                                            <p class="screening-header2">Have you traveled* in the past 10 days?</p>
+                                            <button class="screening-button" data-next="slide"
+                                                data-selector=".q7-3">Yes</button> <button class="screening-button"
+                                                data-toggle="modal" data-target="#answerConfirmation">No</button>
+                                            <p class="asterisk">*Travel is defined as any trip that is overnight AND on
+                                                public transportation (plane, train, bus, Uber, Lyft,
+                                                cab, etc.) OR any trip that is overnight AND with people who are not in
+                                                your
+                                                household.</p>
+                                            <div><button class="btn btn-secondary more-info-button">More Info</button>
+                                            </div>
+                                            <p class="more-info" role="alert"><span
+                                                    class="x24 cdc-icon-info-circle-solid"></span>Individuals who are <a
+                                                    href="https://www.cdc.gov/coronavirus/2019-ncov/your-health/quarantine-isolation.html?CDC_AA_refVal=https%3A%2F%2Fwww.cdc.gov%2Fcoronavirus%2F2019-ncov%2Fif-you-are-sick%2Fquarantine.html">not
+                                                    up-to-date with their COVID-19 vaccines and had a close contact</a>
+                                                must
+                                                stay home and quarantine for at least 5 full days and get tested at
+                                                least 5
+                                                days after the last contact with someone with COVID-19. </p>
+                                        </div>
+                                        <!-- End Question 7 - 2 -->
+                                        <!-- Start Question 7 - 3 / K2 -->
+                                        <div class="screening-section q7-3" style="display: none;">
+                                            <p class="screening-header2">Have you traveled* in the past 5 days?</p>
+                                            <button class="screening-button" data-next="result">Yes</button> <button
+                                                class="screening-button" data-conditions-both="true" data-toggle="modal"
+                                                data-target="#answerConfirmation">No</button>
+                                            <p class="asterisk">*Travel is defined as any trip that is overnight AND on
+                                                public transportation (plane, train, bus, Uber, Lyft,
+                                                cab, etc.) OR any trip that is overnight AND with people who are not in
+                                                your
+                                                household.</p>
+                                            <div><button class="btn btn-secondary more-info-button">More Info</button>
+                                            </div>
+                                            <p class="more-info" role="alert"><span
+                                                    class="x24 cdc-icon-info-circle-solid"></span>Individuals who are <a
+                                                    href="https://www.cdc.gov/coronavirus/2019-ncov/travelers/international-travel-during-covid19.html#anchor_1634925927097">not
+                                                    up-to-date with their COVID-19 vaccines should</a> stay home and
+                                                quarantine for at least 5 full days after travel, get tested 3-5 days
+                                                after
+                                                travel, and self-monitor for symptoms.</p>
+                                        </div>
+                                        <!-- End Question 7 - 3 -->
                                         <!-- Start confirmation dialog modal -->
-                                        <div class="screening-section track-one modal fade" id="answerConfirmation"
-                                            tabindex="-1" role="dialog" aria-labelledby="answerConfirmationLabel"
-                                            aria-hidden="true">
+                                        <div class="screening-section modal fade" id="answerConfirmation" tabindex="-1"
+                                            role="dialog" aria-labelledby="answerConfirmationLabel" aria-hidden="true">
                                             <div class="modal-dialog" role="document">
                                                 <div class="modal-content">
                                                     <div class="modal-header">
@@ -1082,8 +676,8 @@
 
                                                     </div>
                                                     <div class="modal-footer"> <button
-                                                            class="screening-button confirmation"
-                                                            data-dismiss="modal">Yes</button> </div>
+                                                            class="screening-button confirmation" data-dismiss="modal"
+                                                            data-next="result" data-approved="true">Yes</button> </div>
                                                 </div>
                                             </div>
                                         </div> <!-- End confirmation dialog modal -->
@@ -1123,8 +717,7 @@
                                         <div class="card-body bg-gray-l3">
                                             <p><a href="index.html">CPSC Facilities COVID-19 Screening</a><br>
                                                 <a href="further-instructions.html">Access To CPSC Facilities
-                                                    Not Approved - Further Instructions</a> <strong>Will be updated to
-                                                    reflect the latest CDC guidance, when available.</strong><br>
+                                                    Not Approved - Further Instructions</a> <br>
                                                 <a href="privacy-notice.html">CPSC Notice Regarding CPSC
                                                     Facilities COVID-19 Screening</a><em>&#8203;</em></p>
                                             <p><em>CPSC staff who fail to provide accurate information on this form may
@@ -1274,8 +867,7 @@
             var approved = true;
             //['#2F4F4F', '#800080', '#006060', '#0000FF', '#8B4513', '#505050', '#006000'];
             var weekdayColors = ['#006000', '#006000', '#006060', '#006000', '#006000', '#006000', '#006000'];
-            var sections$ = $('.track-one');
-            var sectionsTrackTwo$ = $('.track-two');
+            var sections$ = $('.screening-section');
             var timeoutEl$ = $('#screening-timeout');
 
             $('.more-info-button').click(function (e) {
@@ -1296,31 +888,57 @@
                     buttons$.addClass('disabled');
                     answer$.addClass('answered');
 
-                    if (index === 2) {
+                    if (answer$.data('metric')) {
                         if (typeof s !== 'undefined' && typeof s.tl === 'function') {
                             s.pageName = null;
                             s.linkTrackVars =
                                 'prop5,prop8,prop40,prop49,prop46,prop2,prop31,channel';
-                            s.prop40 = 'ci-covid-facility-screening: vaccination question | ' +
-                                answer$.text();
+                            s.prop40 = 'ci-covid-facility-screening: ' + answer$.data(
+                                'metric') + ' | ' + answer$.text();
                             s.tl(true, 'o', 'covid-facility-screening');
                         }
                     }
 
-                    if (answer$.text() === 'Yes') {
-                        if (index !== 2) {
-                            if (!answer$.hasClass('confirmation')) {
-                                showResults(false);
-                            } else {
-                                setTimeout(function () {
-                                    showResults(true)
-                                }, 500);
-                            }
-                        } else {
-                            showSlide(sectionsTrackTwo$.eq(0), true);
-                        }
-                    } else {
-                        incrementSlide(index, index === (sections$.length - 3));
+                    if (answer$.data('conditions')) {
+                        $('.screening-section.results .approved')
+                            .find('.screening-header1')
+                            .html(`Access to CPSC Facilities<br />
+                    <strong class="font-larger">Granted with Conditions</strong><br /><br />
+                    - Wear a mask in CPSC facilities for 10 days following exposure or until your test result is
+                    negative<br />
+                    - Get tested 5 days after exposure<br />
+                    - If you develop symptoms, immediately leave campus, isolate, and consult with your healthcare
+                    provider`);
+                    }
+
+                    if (answer$.data('conditions-both')) {
+                        $('.screening-section.results .approved')
+                            .find('.screening-header1')
+                            .html(`Access to CPSC Facilities<br />
+                    <strong class="font-larger">Granted with Conditions</strong><br /><br />
+                    - Wear a mask in CPSC facilities for 10 days following exposure or until your test result is
+                    negative<br />
+                    - Get tested 5 days after exposure<br />
+                    - Get tested 3-5 days after travel<br />
+                    - If you develop symptoms, immediately leave campus, isolate, and consult with your healthcare
+                    provider`);
+                    }
+
+                    if (answer$.data('conditions-travel')) {
+                        $('.screening-section.results .approved')
+                            .find('.screening-header1')
+                            .html(`Access to CDC Facilities<br />
+                    <strong class="font-larger">Granted with Conditions</strong><br /><br />
+                    - Get tested 3-5 days after travel<br />
+                    - If you develop symptoms, immediately leave campus, isolate, and consult with your healthcare
+                    provider`);
+                    }
+
+                    if (answer$.data('next') === 'result') {
+
+                        showResults(answer$.data('approved'));
+                    } else if (answer$.data('next') === 'slide') {
+                        showSlide($(answer$.data('selector')), true);
                     }
 
                     if (answer$.data('toggle')) {
@@ -1330,52 +948,16 @@
                     }
                 });
             });
-
-            sectionsTrackTwo$.each(function (index) {
-                var section$ = $(this);
-                var buttons$ = section$.find('.screening-button');
-
-                buttons$.click(function (el) {
-                    var answer$ = $(el.target);
-
-                    if (answer$.hasClass('disabled') || answer$.hasClass('print')) {
-                        return;
-                    }
-
-                    buttons$.addClass('disabled');
-                    answer$.addClass('answered');
-
-                    if (index === 0) {
-                        if (answer$.text() === 'Yes') {
-                            showSlide(sectionsTrackTwo$.eq(1), true);
-                        }
-                    } else {
-                        if (answer$.text() === 'No') {
-                            showResults(false);
-                        }
-                    }
-
-                    if (answer$.data('toggle')) {
-                        setTimeout(function () {
-                            answer$.removeAttr('data-toggle');
-                        });
-                    }
-                });
-            });
-
-            function incrementSlide(index, skipDelay) {
-                var sectionEl$ = sections$.eq(index + 1);
-                showSlide(sectionEl$, skipDelay);
-            }
 
             function showSlide(sectionEl$, skipDelay) {
-                var waitTextEl$ = $('<p>Please review the screening question</p>');
-
                 sectionEl$.show();
                 sectionEl$[0].scrollIntoView({
                     'behavior': 'smooth'
                 });
+
                 if (!skipDelay) {
+                    var waitTextEl$ = $('<p>Please review the screening question</p>');
+
                     sectionEl$.find('.screening-button').eq(0).before(waitTextEl$);
                     sectionEl$.find('.screening-button').prop('disabled', true);
 
@@ -1420,26 +1002,10 @@
 
                 }
             }
-
-            incrementSlide(-1);
         });
     </script>
     <script>
         window.shortTitle = "CPSC Facilities COVID-19 Screening";
-        window.pageOptions = window.pageOptions || {};
-        window.pageOptions.navigation = window.pageOptions.navigation || {
-            fourthLevelCollapsed: false,
-            showFourthLevel: true
-        };
-        window.pageOptions.navigation.breadcrumbs = {
-            mode: 'auto',
-            showCurrentPage: false,
-            prefix: [{
-                "text": "CPSC Facilities COVID-19 Screening ",
-                "href": "\/screening\/index.html"
-            }]
-        };
-        window.CDC.tp4.public.appInit(window.pageOptions);
     </script>
 
     <!-- External Link Modal -->

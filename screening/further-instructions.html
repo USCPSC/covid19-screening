@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="../TemplatePackage/4.0/assets/css/app.min.css" />
-
+    <link rel="stylesheet" href="../TemplatePackage/4.0/assets/css/cpsc.css" />
     <link rel="stylesheet" media="print" href="../TemplatePackage/4.0/assets/css/print.min.css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
     <!-- Google Fonts -->
@@ -79,588 +79,8 @@
     <meta name="cdc:last_published" content="2021-08-03T20:59:02Z" />
 
 </head>
-<style>
-    .footer {
-        background-color: #0E1E45;
-        color: #ffffff;
-    }
 
-    .footer .social_block {
-        text-align: center;
-    }
 
-    .footer .social_block a {
-        padding: 0 1rem;
-        text-decoration: none;
-    }
-
-    @media (min-width: 768px) {
-        .footer .social_block a {
-            padding-left: 1rem;
-        }
-    }
-
-    .footer .note-block .header-font {
-        color: #ffffff;
-    }
-
-    .footer .note-block .header-font img {
-        max-height: 30px;
-        max-width: 30px;
-        padding-right: 2px;
-        display: inline-block;
-        vertical-align: top;
-    }
-
-    .footer .note-block .header-font a {
-        display: inline-block;
-        width: 80%;
-    }
-
-    .footer a {
-        color: #ffffff;
-        text-decoration: none;
-    }
-
-    .footer a:hover,
-    .footer a:focus {
-        text-decoration: underline;
-        color: #ffffff;
-    }
-
-    .footer .footer-list {
-        padding: 1.5em;
-    }
-
-    .footer .footer-list div {
-        margin-top: 20px;
-    }
-
-    .footer .footer-list div:first-child {
-        margin-top: 0;
-    }
-
-    .footer .footer-list div span {
-        font-weight: bold;
-        min-width: 200px;
-    }
-
-    .footer .footer-list .note {
-        color: #ffffff;
-        font-size: 0.813em;
-        text-align: right;
-    }
-
-    .footer .footer-list a {
-        margin: 0 1em;
-        line-height: 1.5;
-        text-decoration: none;
-    }
-
-    .footer .footer-list a:hover,
-    .footer .footer-list a:focus {
-        text-decoration: underline;
-    }
-
-    .footer .info {
-        text-align: center;
-        line-height: 2em;
-        border-top: 1px solid #FFFFFF;
-    }
-
-    .accordion {
-        background-color: #0E1E45;
-    }
-
-    .accordion>.card:last-of-type {
-        border-top-left-radius: 0;
-        border-top-right-radius: 0;
-    }
-
-    .accordion>.card:first-of-type {
-        border-bottom: 0;
-        border-bottom-right-radius: 0;
-        border-bottom-left-radius: 0;
-    }
-
-    .accordion .card {
-        border: 0;
-        border-radius: 0;
-        background-color: #0E1E45;
-    }
-
-    .accordion>.card {
-        overflow: hidden;
-    }
-
-    .card {
-        border: 1px solid #1D2757;
-        margin: 1rem 0;
-        border-left: 7px solid #1D2757;
-        margin: 1rem 0;
-        box-shadow: none;
-    }
-
-    .card {
-        font-weight: 400;
-        border: 0;
-        -webkit-box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
-        box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
-    }
-
-    .card {
-        position: relative;
-        display: -ms-flexbox;
-        display: flex;
-        -ms-flex-direction: column;
-        flex-direction: column;
-        min-width: 0;
-        word-wrap: break-word;
-        background-color: #fff;
-        background-clip: border-box;
-        border: 1px solid rgba(0, 0, 0, .125);
-        border-radius: .25rem;
-    }
-
-
-
-    .justify-content-center {
-        -ms-flex-pack: center !important;
-        justify-content: center !important;
-    }
-
-    .flex-column {
-        -ms-flex-direction: column !important;
-        flex-direction: column !important;
-    }
-
-    .nav {
-        display: -ms-flexbox;
-        display: flex;
-        -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-        padding-left: 0;
-        margin-bottom: 0;
-        list-style: none;
-    }
-
-    .flex-row {
-        -ms-flex-direction: row !important;
-        flex-direction: row !important;
-    }
-
-    .d-flex {
-        display: -ms-flexbox !important;
-        display: flex !important;
-    }
-</style>
-<style media="print">
-    .print-hidden {
-        display: none;
-    }
-
-    .screening-section {
-        display: none;
-    }
-
-    .screening-section.results {
-        display: block;
-    }
-
-    .screening-section button.print {
-        display: none;
-    }
-
-    .facility-table {
-        display: none;
-    }
-</style>
-
-<style>
-    ul.social-media-footer {
-        display: none !important;
-    }
-
-    .screening-section {
-        background: #e1f3f8;
-        padding: 1em;
-        margin: 1.5em 0;
-    }
-
-    .screening-section .screening-header1 {
-        font-size: 24px;
-    }
-
-    .screening-section .screening-header2 {
-        font-size: 20px;
-        margin-top: 5px;
-        color: #323a45;
-        font-weight: bolder;
-        font-family: "Open Sans", apple-system, blinkmacsystemfont, "Segoe UI", "Helvetica Neue", arial, sans-serif;
-    }
-
-    .screening-section .screening-button {
-        border-radius: 8px;
-        border: 2px solid #0051AB;
-        background-color: transparent;
-        color: #0051AB;
-        font-size: 20px;
-        font-weight: bold;
-        padding: 9px 28px;
-    }
-
-    .screening-section .screening-button.answered {
-        background-color: #0051AB;
-        color: white;
-    }
-
-    .screening-section .screening-button[disabled] {
-        border-color: gray;
-        color: gray;
-    }
-
-    .screening-section.results {
-        background-color: white;
-        text-align: center;
-    }
-
-    .screening-section.results .cdc-icon-pdf {
-        display: none;
-    }
-
-    .screening-section.results a,
-    .screening-section.results p,
-    .screening-section.results .approved-indicator {
-        color: white;
-    }
-
-    .approved-indicator {
-        font-weight: bolder;
-        font-size: 70px;
-        text-align: center;
-    }
-
-    .screening-section .screening-button.print {
-        color: white;
-        border-color: white;
-    }
-
-    .more-info-button {
-        margin-top: 2em;
-    }
-
-    .more-info-button:focus {
-        outline: auto !important;
-    }
-
-    .more-info {
-        display: none;
-    }
-
-    #answerConfirmation {
-        background-color: transparent;
-    }
-
-    #screening-timeout {
-        margin-bottom: 30px;
-    }
-
-    .screening-section .accordion .card.bar,
-    .screening-section .accordion .card-header {
-        background-color: transparent;
-    }
-
-    .screening-section .accordion .card-header {
-        border-bottom: none;
-    }
-
-    .screening-section .accordion .card-header::after {
-        right: auto;
-        margin-left: 15px;
-    }
-
-    .screening-section .cdc-icon-info-circle-solid {
-        margin-right: 5px;
-    }
-
-    .screening-section .cdc-icon-info-circle-solid::before {
-        color: #0051AB;
-    }
-
-    .screening-section .more-info {
-        background-color: #f5f5f5;
-        padding: 5px;
-        margin-top: 1rem;
-    }
-
-    .facility-table-container {
-        width: 100%;
-        overflow-x: auto;
-    }
-
-    .facility-table {
-        text-align: left;
-        margin: 1em auto;
-    }
-
-    .facility-table td,
-    .facility-table th {
-        padding: 0 0.75em 0 0.25em;
-    }
-
-    .facility-table .row-header {
-        background-color: white;
-    }
-
-    .facility-table .row-header a {
-        color: #075290;
-    }
-
-    .facility-table .row-moderate {
-        background-color: yellow;
-    }
-
-    .facility-table .row-substantial {
-        background-color: orange;
-    }
-
-    .facility-table .row-high {
-        background-color: red;
-    }
-</style>
-<style>
-    ul.social-media-footer {
-        display: none !important;
-    }
-
-    .screening-section {
-        background: #e1f3f8;
-        padding: 1em;
-        margin: 1.5em 0;
-    }
-
-    .screening-section .screening-header1 {
-        font-size: 24px;
-    }
-
-    .screening-section .screening-header2 {
-        font-size: 20px;
-        margin-top: 5px;
-        color: #323a45;
-        font-weight: bolder;
-        font-family: "Open Sans", apple-system, blinkmacsystemfont, "Segoe UI", "Helvetica Neue", arial, sans-serif;
-    }
-
-    .screening-section .screening-button {
-        border-radius: 8px;
-        border: 2px solid #0051AB;
-        background-color: transparent;
-        color: #0051AB;
-        font-size: 20px;
-        font-weight: bold;
-        padding: 9px 28px;
-    }
-
-    .screening-section .screening-button.answered {
-        background-color: #0051AB;
-        color: white;
-    }
-
-    .screening-section .screening-button[disabled] {
-        border-color: gray;
-        color: gray;
-    }
-
-    .screening-section.results {
-        background-color: white;
-        text-align: center;
-    }
-
-    .screening-section.results .cdc-icon-pdf {
-        display: none;
-    }
-
-    .screening-section.results a,
-    .screening-section.results p,
-    .screening-section.results .approved-indicator {
-        color: white;
-    }
-
-    .approved-indicator {
-        font-weight: bolder;
-        font-size: 70px;
-        text-align: center;
-    }
-
-    .screening-section .screening-button.print {
-        color: white;
-        border-color: white;
-    }
-
-    .more-info-button {
-        margin-top: 2em;
-    }
-
-    .more-info-button:focus {
-        outline: auto !important;
-    }
-
-    .more-info {
-        display: none;
-    }
-
-    #answerConfirmation {
-        background-color: transparent;
-    }
-
-    #screening-timeout {
-        margin-bottom: 30px;
-    }
-
-    .screening-section .accordion .card.bar,
-    .screening-section .accordion .card-header {
-        background-color: transparent;
-    }
-
-    .screening-section .accordion .card-header {
-        border-bottom: none;
-    }
-
-    .screening-section .accordion .card-header::after {
-        right: auto;
-        margin-left: 15px;
-    }
-
-    .screening-section .cdc-icon-info-circle-solid {
-        margin-right: 5px;
-    }
-
-    .screening-section .cdc-icon-info-circle-solid::before {
-        color: #0051AB;
-    }
-
-    .screening-section .more-info {
-        background-color: #f5f5f5;
-        padding: 5px;
-        margin-top: 1rem;
-    }
-
-    .facility-table-container {
-        width: 100%;
-        overflow-x: auto;
-    }
-
-    .facility-table {
-        text-align: left;
-        margin: 1em auto;
-    }
-
-    .facility-table td,
-    .facility-table th {
-        padding: 0 0.75em 0 0.25em;
-    }
-
-    .facility-table .row-header {
-        background-color: white;
-    }
-
-    .facility-table .row-header a {
-        color: #075290;
-    }
-
-    .facility-table .row-moderate {
-        background-color: yellow;
-    }
-
-    .facility-table .row-substantial {
-        background-color: orange;
-    }
-
-    .facility-table .row-high {
-        background-color: red;
-    }
-</style>
-<style>
-    .card-bg-primary {
-        background-color: #003F7B;
-        color: #fff !important
-    }
-
-    .card-bg-gray-l1 {
-        background-color: #e0e0e0 !important;
-        color: #000
-    }
-
-    @media screen and (max-width: 768px) {
-        .header--logo {
-            margin: 2em 0 0;
-        }
-    }
-
-    .header--logo {
-        margin: 2em 0;
-        position: relative;
-        flex: 2;
-        -webkit-flex: 2;
-        -moz-flex: 2;
-        -ms-flex: 2;
-    }
-
-    @media screen and (max-width: 480px) {
-        .header--logo-text {
-            top: .6em;
-        }
-    }
-
-    .header--logo-text {
-        position: absolute;
-        top: .5em;
-        color: #20407d;
-        display: inline-block;
-    }
-
-    @media screen and (max-width: 768px) {
-        .header-row {
-            display: flex;
-            display: -webkit-box;
-            display: -moz-box;
-            display: -ms-flexbox;
-            display: -webkit-flex;
-            flex-direction: column;
-            -webkit-flex-direction: column;
-            -moz-flex-direction: column;
-            -ms-flex-direction: column;
-            flex-wrap: nowrap;
-            -webkit-flex-wrap: wrap;
-            -moz-wrap: wrap;
-            -ms-wrap: wrap;
-            padding: inherit;
-            width: auto;
-        }
-    }
-
-    .header-row {
-        display: flex;
-        display: -webkit-box;
-        display: -moz-box;
-        display: -ms-flexbox;
-        display: -webkit-flex;
-        flex-direction: row;
-        -webkit-flex-direction: row;
-        -moz-flex-direction: row;
-        -ms-flex-direction: row;
-        flex-wrap: wrap;
-        -webkit-flex-wrap: wrap;
-        -moz-wrap: wrap;
-        -ms-wrap: wrap;
-        width: 100%;
-    }
-
-    .row {
-        margin-left: -15px;
-        margin-right: -15px;
-    }
-</style>
 
 <body class="no-js">
 
@@ -875,26 +295,42 @@
                                                             alt="Clipart illustration of a house" title="2-home-image">
 
                                                     </div>
-                                                    <div class="col-md-10 p-md-3 pt-0 pb-3" role="cell">
-                                                        <p><strong>If you have been in close contact with someone with
-                                                                COVID-19</strong>&nbsp;<strong>and</strong> <strong>you
-                                                                are not fully vaccinated</strong>, you should stay home
-                                                            and self-quarantine for 14 days before returning to
-                                                            work.&nbsp;<a
-                                                                href="https://www.cdc.gov/coronavirus/2019-ncov/if-you-are-sick/quarantine.html">Read
-                                                                more about when you should be in isolation or
-                                                                quarantine</a>. <strong>If you have been in close
-                                                                contact with someone with COVID-19 and you are fully
-                                                                vaccinated</strong>, you should get tested
-                                                            3-5 days after your exposure, even if you don&rsquo;t have
-                                                            symptoms. <a
-                                                                href="https://www.cdc.gov/coronavirus/2019-ncov/vaccines/fully-vaccinated.html">Read
-                                                                more about what to do if you&rsquo;ve had a close
-                                                                contact and are fully vaccinated</a>. If you have an
-                                                            urgent need to end your quarantine early to access a CPSC
-                                                            facility, please contact your supervisor and ask
-                                                            them to email a request to EXRM.</p>
+                                                    <div class="col-md-10 p-3">
+                                                        <div role="cell">
+                                                            <p><strong>If you are NOT up-to-date on COVID-19
+                                                                    vaccinations AND you have:</strong></p>
+                                                            <ul>
+                                                                <li><strong>been in close contact with someone with
+                                                                        COVID-19 in the last 10 days, and/or</strong>
+                                                                </li>
+                                                                <li><strong>have traveled in the last 10 days,</strong>
+                                                                </li>
+                                                            </ul>
+                                                            <p>you should stay home and self-quarantine for 5
+                                                                days.&nbsp; You will also need to get tested at least 5
+                                                                days after you last had close contact with someone with
+                                                                COVID-19 before returning to work. After quarantine you
+                                                                should watch for symptoms until 10 days after you last
+                                                                had close contact with someone with COVID-19 and wear a
+                                                                well-fitted mask any time you are around others. </p>
+                                                            <p><strong>If you are up-to-date on COVID-19 vaccinations
+                                                                    and you have:</strong></p>
+                                                            <ul>
+                                                                <li><strong>been in close contact with someone with
+                                                                        COVID-19 in the last 10 days, and/or</strong>
+                                                                </li>
+                                                                <li><strong>have traveled internationally in the last 10
+                                                                        days</strong>,</li>
+                                                            </ul>
+                                                            <p>you should wear a well-fitted mask for 10 days following
+                                                                exposure and get tested 5 days after your exposure or
+                                                                travel return date, even if you don’t have
+                                                                symptoms.&nbsp;<a
+                                                                    href="https://www.cdc.gov/coronavirus/2019-ncov/if-you-are-sick/quarantine.html">Read
+                                                                    more about when you should be in isolation or
+                                                                    quarantine</a>.</p>
 
+                                                        </div>
                                                     </div>
                                                 </div>
                                                 <div class="row" role="row">
@@ -912,18 +348,7 @@
                                                             </strong>If you have an urgent need to end your quarantine
                                                             early, please contact your supervisor and ask them to email
                                                             a request to EXRM.</p>
-                                                        <p><strong>If you are waiting on the results of a diagnostic
-                                                                COVID-19 test,
-                                                            </strong><strong>please do not return to the workplace until
-                                                                you have received a negative test result and have
-                                                                completed any necessary <a
-                                                                    href="https://www.cdc.gov/coronavirus/2019-ncov/if-you-are-sick/quarantine.html">quarantine</a>
-                                                                or <a
-                                                                    href="https://www.cdc.gov/coronavirus/2019-ncov/if-you-are-sick/isolation.html">isolation</a>
-                                                                per CDC guidance. </strong>If you have an urgent need to
-                                                            access a CPSC facility while waiting for a test result,
-                                                            please contact your supervisor and ask them to email a
-                                                            request to EXRM.</p>
+
 
                                                     </div>
                                                 </div>
@@ -962,7 +387,13 @@
                     </div>
                     <div class="row d-none d-lg-block">
                         <div class="col pca">
-                            <!-- Persistent Content Area Here -->
+                            <div class="row last-reviewed-row">
+                                <div class="col last-reviewed">
+                                    Page Last Reviewed: <span id="last-reviewed-date">November 3, 2021</span><br>
+                                    Screening App Last Reviewed: <span id="last-reviewed-date">November 3, 2021</span>
+                                </div>
+                            </div>
+                            <p></p>
                         </div>
                     </div>
 
@@ -983,80 +414,74 @@
             <div class="col-12 mt-5">
             </div>
         </div>
+
     </div>
 
     <!-- Above Footer Start -->
-    <footer class="border-top footer mt-5" role="contentinfo">
-        <div class="container">
-            <div class="footer-list nav  nav-fill  flex-column flex-md-row">
-                <a class="nav-item" href="https://cpsc.gov/About-CPSC/Miscellaneous/508"
-                    target="_blank">Accessibility</a>
-                <a class="nav-item"
-                    href="https://www.cpsc.gov/about-cpsc/policies-statements-and-directives/privacy-policy"
-                    target="_blank">Privacy Policy</a>
-                <a class="nav-item" href="https://www.cpsc.gov/vulnerability-disclosure-policy"
-                    target="_blank">Vulnerability Disclosure Policy</a>
-                <a class="nav-item" href="https://www.cpsc.gov/About-CPSC/Agency-Reports/open" target="_blank">Open
-                    Government</a>
-                <a class="nav-item" href="https://cpsc.gov/Research--Statistics/Information-Quality-Act"
-                    target="_blank">Information Quality Act</a>
+    <footer class="border-top  footer mt-5" role="contentinfo">
+        <div class="footer-list footer-nav footer-nav-fill justify-content-center footer-flex-column flex-md-row">
+            <!--<a class="footer-nav-item" href="https://cpsc.gov/About-CPSC/Miscellaneous/508" target="_blank">Accessibility</a>
+     <a class="footer-nav-item" href="https://www.cpsc.gov/about-cpsc/policies-statements-and-directives/privacy-policy"
+         target="_blank">Privacy Policy</a>
+     <a class="footer-nav-item" href="https://www.cpsc.gov/vulnerability-disclosure-policy"
+         target="_blank">Vulnerability Disclosure Policy</a>
+     <a class="footer-nav-item" href="https://www.cpsc.gov/About-CPSC/Agency-Reports/open" target="_blank">Open
+         Government</a>
+     <a class="footer-nav-item" href="https://cpsc.gov/Research--Statistics/Information-Quality-Act"
+         target="_blank">Information Quality Act</a>
 
-                <a class="nav-item" href="https://cpsc.gov/Newsroom/FOIA" target="_blank">FOIA</a>
-                <a class="nav-item" href="https://cpsc.gov/OIG" target="_blank">Inspector
-                    General</a>
+     <a class="footer-nav-item" href="https://cpsc.gov/Newsroom/FOIA" target="_blank">FOIA</a>
+     <a class="footer-nav-item" href="https://cpsc.gov/OIG" target="_blank">Inspector General</a>
 
-                <a class="nav-item" href="https://www.cpsc.gov/About-CPSC/No-FEAR-Act/The-No-Fear-Act"
-                    target="_blank">No
-                    Fear Act</a>
-
-
-
-            </div>
+     <a class="footer-nav-item" href="https://www.cpsc.gov/About-CPSC/No-FEAR-Act/The-No-Fear-Act" target="_blank">No
+         Fear Act</a>
+ </div>-->
 
             <div class="social_block flex-row d-flex justify-content-center">
-                <a class="nav-item" href="https://www.facebook.com/USCPSC/"><img src="../imgs/facebook.png"
+                <a class="footer-nav-item" href="https://www.facebook.com/USCPSC/"><img src="../imgs/facebook.png"
                         alt="Facebook" /></a>
-                <a class="nav-item" href="https://twitter.com/uscpsc"><img src="../imgs/twitter-white.svg"
+                <a class="footer-nav-item" href="https://twitter.com/uscpsc"><img src="../imgs/twitter-white.svg"
                         alt="Twitter" /></a>
-                <a class="nav-item" href="https://www.instagram.com/uscpsc/"><img src="../imgs/instagram-white.svg"
-                        alt="Instagram" /></a>
-                <a class="nav-item" href="http://www.youtube.com/uscpsc"><img src="../imgs/youtube.svg"
+                <a class="footer-nav-item" href="https://www.instagram.com/uscpsc/"><img
+                        src="../imgs/instagram-white.svg" alt="Instagram" /></a>
+                <a class="footer-nav-item" href="http://www.youtube.com/uscpsc"><img src="../imgs/youtube.svg"
                         alt="Youtube" /></a>
 
             </div>
 
-            <div class="note-block mt-5">
+        </div>
+        <div class="note-block mt-5 flex-row d-flex justify-content-center">
 
-                <div class="header-font t15"><img src="../imgs/cpsc-logo.png" alt=" CPSC logo" /> <a
-                        href="https://cpsc.gov/"
-                        title="Click to visit The U.S. Consumer Product Safety Commission website">The
-                        U.S. Consumer
-                        Product Safety Commission</a></div>
-                <div class="t15">CPSC does not guarantee the accuracy, completeness, or adequacy of
-                    the contents of the
-                    Publicly Available Consumer Product Safety Information Database on
-                    SaferProducts.gov, particularly
-                    with respect to information submitted by people outside of CPSC.</div>
+            <div class="header-font t10 "><img src="../imgs/cpsc-logo.png" alt=" CPSC logo" />
+                <a href="https://cpsc.gov/"
+                    title="Click to visit The U.S. Consumer Product Safety Commission website">U.S. Consumer
+                    Product Safety Commission</a></br>
+
+
+                <p>4330 East-West Highway Bethesda, MD 20814<br>
+
+                    Contact Us: 800-638-2772 (TTY 800-638-8270)<br>
+                    Toll-Free Consumer Hotline | Time: 8 a.m. - 5.30. p.m. ET</p>
+
+
+
             </div>
+        </div>
+        <div class="accordion " id="usa-banner">
+            <div class="card">
+                <div class="card-header" id="footerbanner">
+                    <div class="font-weight-normal t13 title mb-1">
 
-            <div class="accordion" id="usa-banner">
-                <div class="card">
-                    <div class="card-header" id="footerbanner">
-                        <div class="font-weight-normal t13 title mb-1">
+                        <img class="usa-banner-flag" src="../imgs/flagicon.png" alt="U.S. flag">
 
-                            <img class="usa-banner-flag" src="../imgs/flagicon.png" alt="U.S. flag">
+                        <span class="usa-banner-header-text  t13">An official website of the United States
+                            government.</span>
 
-                            <span class="usa-banner-header-text  t13">An official website of the
-                                United States
-                                government.</span>
-
-                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </footer>
-
     <!-- Above Footer End -->
 
 
