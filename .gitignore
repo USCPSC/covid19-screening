@@ -1,0 +1,10 @@
+node_modules/
+
+#entry point
+index.js
+
+#ps
+screening/psCompareSites.ps1
+screening/package-lock.json
+#scripts
+Deploy.cmd
