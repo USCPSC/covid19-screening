@@ -2,7 +2,7 @@ node_modules/
 
 #entry point
 index.js
-
+package-lock.json
 #ps
 screening/psCompareSites.ps1
 screening/package-lock.json
